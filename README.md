@@ -38,9 +38,15 @@ documentacao/         script do banco, tutorial, estrutura e wireframes
 
 ## Wireframes
 
-Esboço das telas principais (cliente e administrador), todas com cabeçalho, menu de navegação e rodapé:
+Esboço das telas principais do sistema, todas com cabeçalho, menu de navegação e rodapé:
 
-![Wireframes do BarberShop](documentacao/wireframes.png)
+![Wireframe 1](documentacao/wireframes-1.png)
+
+![Wireframe 2](documentacao/wireframes-2.png)
+
+![Wireframe 3](documentacao/wireframes-3.png)
+
+![Wireframe 4](documentacao/wireframes-4.png)
 
 ## Diagrama do banco
 
