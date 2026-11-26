@@ -1,0 +1,79 @@
+.
+|-- .env
+|-- .env.example
+|-- .gitignore
+|-- README.md
+|-- backend
+|   |-- controllers
+|   |   |-- agendamentoController.js
+|   |   |-- authController.js
+|   |   |-- barbeiroController.js
+|   |   `-- servicoController.js
+|   |-- database.js
+|   |-- middlewares
+|   |   |-- auth.js
+|   |   |-- upload.js
+|   |   `-- uploadPerfil.js
+|   |-- routes
+|   |   |-- agendamentoRoutes.js
+|   |   |-- authRoutes.js
+|   |   |-- barbeiroRoutes.js
+|   |   `-- servicoRoutes.js
+|   `-- server.js
+|-- documentacao
+|   |-- estrutura.txt
+|   |-- scriptBarberShop.sql
+|   `-- tutorial.md
+|-- estrutura.txt
+|-- frontend
+|   |-- agendamento
+|   |   |-- agendamento.css
+|   |   |-- agendamento.html
+|   |   `-- agendamento.js
+|   |-- app.js
+|   |-- barbeiro
+|   |   |-- barbeiro.css
+|   |   |-- barbeiro.html
+|   |   `-- barbeiro.js
+|   |-- login
+|   |   |-- login.css
+|   |   |-- login.html
+|   |   `-- login.js
+|   |-- menu.css
+|   |-- menu.html
+|   |-- menu.js
+|   |-- perfil
+|   |   |-- perfil.css
+|   |   |-- perfil.html
+|   |   `-- perfil.js
+|   |-- recuperar_senha
+|   |   |-- recuperar_senha.css
+|   |   |-- recuperar_senha.html
+|   |   `-- recuperar_senha.js
+|   |-- redefinir_senha
+|   |   |-- redefinir_senha.css
+|   |   |-- redefinir_senha.html
+|   |   `-- redefinir_senha.js
+|   |-- servico
+|   |   |-- servico.css
+|   |   |-- servico.html
+|   |   `-- servico.js
+|   `-- visaoCliente
+|       |-- agendar
+|       |   |-- agendar.css
+|       |   |-- agendar.html
+|       |   `-- agendar.js
+|       `-- meus_agendamentos
+|           |-- meus_agendamentos.css
+|           |-- meus_agendamentos.html
+|           `-- meus_agendamentos.js
+|-- imagens
+|   |-- perfil
+|   |   `-- .gitkeep
+|   `-- servico
+|       `-- .gitkeep
+|-- index.html
+|-- package-lock.json
+`-- package.json
+
+20 directories, 57 files

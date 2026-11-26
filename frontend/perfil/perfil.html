@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu perfil - BarberShop</title>
+  <link rel="stylesheet" href="/perfil/perfil.css">
+</head>
+
+<body>
+  <header>
+    <h1>✂ BARBERSHOP</h1>
+    <p>Tradição e estilo desde 2026</p>
+  </header>
+  <nav id="menu"></nav>
+  <main>
+    <div id="msg"></div>
+    <section>
+      <h2>Meu perfil</h2>
+      <div class="perfil">
+        <div class="perfil-foto" id="fotoGrande"></div>
+        <div class="perfil-dados">
+          <h3 id="pNome"></h3>
+          <p id="pEmail"></p>
+          <p id="pPapel"></p>
+          <div class="perfil-botoes">
+            <button class="btn" id="btnEscolher" type="button">Escolher foto</button>
+            <button class="btn sec" id="btnRemover" type="button">Remover foto</button>
+          </div>
+          <p>JPG, PNG, WEBP ou GIF, até 2 MB.</p>
+          <input type="file" id="arquivoFoto" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>BarberShop &copy; 2026 &mdash; Eduardo Barzotto Iritsu &mdash; M32 &mdash; Desenvolvimento Web I</p>
+  </footer>
+  <script src="/app.js"></script>
+  <script src="/perfil/perfil.js"></script>
+</body>
+
+</html>

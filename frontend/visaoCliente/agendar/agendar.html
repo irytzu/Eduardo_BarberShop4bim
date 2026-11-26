@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agendar - BarberShop</title>
+    <link rel="stylesheet" href="/visaoCliente/agendar/agendar.css">
+</head>
+
+<body>
+    <header>
+        <h1>✂ BARBERSHOP</h1>
+        <p>Tradição e estilo desde 2026</p>
+    </header>
+    <nav id="menu"></nav>
+    <main>
+        <div id="msg"></div>
+        <section>
+            <h2>Agendar horário</h2>
+            <form id="form">
+                <label>Serviço<select name="servico_id" required></select></label>
+                <label>Barbeiro<select name="barbeiro_id" required></select></label>
+                <label>Data e hora<input type="datetime-local" name="data_hora" required></label>
+                <label>Forma de pagamento (simulado)
+                    <select name="forma_pagamento">
+                        <option value="pix">Pix</option>
+                        <option value="cartao">Cartão</option>
+                        <option value="dinheiro">Dinheiro</option>
+                    </select></label>
+                <p id="resumo"></p>
+                <button class="btn">Confirmar e pagar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>BarberShop &copy; 2026 &mdash; Eduardo Barzotto Iritsu &mdash; M32 &mdash; Desenvolvimento Web I</p>
+    </footer>
+    <script src="/app.js"></script>
+    <script src="/visaoCliente/agendar/agendar.js"></script>
+</body>
+
+</html>

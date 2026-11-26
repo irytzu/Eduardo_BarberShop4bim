@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin - Agendamentos - BarberShop</title>
+    <link rel="stylesheet" href="/agendamento/agendamento.css">
+</head>
+
+<body>
+    <header>
+        <h1>✂ BARBERSHOP</h1>
+        <p>Tradição e estilo desde 2026</p>
+    </header>
+    <nav id="menu"></nav>
+    <main>
+        <div id="msg"></div>
+        <section>
+            <h2>Todos os agendamentos</h2>
+            <aside id="resumo"></aside>
+            <div class="tabela-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Cliente</th>
+                            <th>Serviço</th>
+                            <th>Barbeiro</th>
+                            <th>Valor</th>
+                            <th>Pagamento</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>BarberShop &copy; 2026 &mdash; Eduardo Barzotto Iritsu &mdash; M32 &mdash; Desenvolvimento Web I</p>
+    </footer>
+    <script src="/app.js"></script>
+    <script src="/agendamento/agendamento.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin - Serviços - BarberShop</title>
+    <link rel="stylesheet" href="/servico/servico.css">
+</head>
+
+<body>
+    <header>
+        <h1>✂ BARBERSHOP</h1>
+        <p>Tradição e estilo desde 2026</p>
+    </header>
+    <nav id="menu"></nav>
+    <main>
+        <div id="msg"></div>
+        <section>
+            <h2>Serviços</h2>
+            <form id="form" enctype="multipart/form-data">
+                <input type="hidden" name="id">
+                <label>Nome<input name="nome" required></label>
+                <label>Descrição<input name="descricao"></label>
+                <label>Preço (R$)<input name="preco" type="number" step="0.01" required></label>
+                <label>Duração (min)<input name="duracao_min" type="number" required></label>
+                <label>Imagem<input name="imagem" type="file" accept="image/*"></label>
+                <button class="btn">Salvar</button>
+                <button type="button" class="btn sec" id="limpar">Limpar</button>
+            </form>
+            <div class="tabela-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Imagem</th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Min</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>BarberShop &copy; 2026 &mdash; Eduardo Barzotto Iritsu &mdash; M32 &mdash; Desenvolvimento Web I</p>
+    </footer>
+    <script src="/app.js"></script>
+    <script src="/servico/servico.js"></script>
+</body>
+
+</html>

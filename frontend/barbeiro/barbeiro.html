@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin - Barbeiros - BarberShop</title>
+    <link rel="stylesheet" href="/barbeiro/barbeiro.css">
+</head>
+
+<body>
+    <header>
+        <h1>✂ BARBERSHOP</h1>
+        <p>Tradição e estilo desde 2026</p>
+    </header>
+    <nav id="menu"></nav>
+    <main>
+        <div id="msg"></div>
+        <section>
+            <h2>Barbeiros</h2>
+            <form id="form">
+                <input type="hidden" name="id">
+                <label>Nome<input name="nome" required></label>
+                <label>Especialidade<input name="especialidade"></label>
+                <label>Telefone<input name="telefone"></label>
+                <button class="btn">Salvar</button>
+                <button type="button" class="btn sec" id="limpar">Limpar</button>
+            </form>
+            <div class="tabela-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Especialidade</th>
+                            <th>Telefone</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>BarberShop &copy; 2026 &mdash; Eduardo Barzotto Iritsu &mdash; M32 &mdash; Desenvolvimento Web I</p>
+    </footer>
+    <script src="/app.js"></script>
+    <script src="/barbeiro/barbeiro.js"></script>
+</body>
+
+</html>

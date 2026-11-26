@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entrar - BarberShop</title>
+    <link rel="stylesheet" href="/login/login.css">
+</head>
+
+<body>
+    <header>
+        <h1>✂ BARBERSHOP</h1>
+        <p>Tradição e estilo desde 2026</p>
+    </header>
+    <nav id="menu"></nav>
+    <main>
+        <div id="msg"></div>
+        <section>
+            <h2>Entrar</h2>
+            <form id="formLogin">
+                <label>E-mail<input type="email" name="email" required></label>
+                <label>Senha<input type="password" name="senha" required></label>
+                <button class="btn">Entrar</button>
+            </form>
+            <p><a href="/recuperar_senha/recuperar_senha.html">Esqueci minha senha</a></p>
+        </section>
+        <section>
+            <h2>Criar conta de cliente</h2>
+            <form id="formReg">
+                <label>Nome<input name="nome" required></label>
+                <label>E-mail<input type="email" name="email" required></label>
+                <label>Senha<input type="password" name="senha" required minlength="4"></label>
+                <label>Telefone<input name="telefone"></label>
+                <label>Endereço<input name="endereco"></label>
+                <button class="btn">Cadastrar</button>
+            </form>
+        </section>
+        <aside>Teste: <b>admin@barbershop.com</b> ou <b>joao@email.com</b> &mdash; senha <b>123456</b></aside>
+    </main>
+    <footer>
+        <p>BarberShop &copy; 2026 &mdash; Eduardo Barzotto Iritsu &mdash; M32 &mdash; Desenvolvimento Web I</p>
+    </footer>
+    <script src="/app.js"></script>
+    <script src="/login/login.js"></script>
+</body>
+
+</html>
