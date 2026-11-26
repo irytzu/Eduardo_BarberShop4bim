@@ -25,23 +25,22 @@ guarda('cliente').then(async (u) => {
   const f = document.getElementById('form');
   f.servico_id.innerHTML = serv.map(s => `<option value="${s.id}">${esc(s.nome)} - ${brl(s.preco)}</option>`).join('');
   f.barbeiro_id.innerHTML = barb.map(b => `<option value="${b.id}">${esc(b.nome)} (${esc(b.especialidade)})</option>`).join('');
-  // mostra um QR Code novo (aleatório) sempre que a forma de pagamento for Pix
-  const atualizaPix = () => {
-    const pix = f.forma_pagamento.value === 'pix';
-    document.getElementById('pixBox').hidden = !pix;
-    if (pix) {
-      document.getElementById('qr').innerHTML = gerarQrFalso();
-      document.getElementById('pixCodigo').textContent = codigoPixFalso();
-    }
-  };
-  f.forma_pagamento.onchange = atualizaPix;
-  atualizaPix();
   f.onsubmit = async (e) => {
     e.preventDefault();
     try {
-      await api('/api/agendamentos', json('POST', Object.fromEntries(new FormData(f))));
-      msg('Agendamento confirmado! Pagamento aprovado (simulado).');
-      setTimeout(() => location.href = '/visaoCliente/meus_agendamentos/meus_agendamentos.html', 1200);
+      const dados = Object.fromEntries(new FormData(f));
+      await api('/api/agendamentos', json('POST', dados));
+      f.querySelector('button').disabled = true; // evita confirmar duas vezes
+      if (dados.forma_pagamento === 'pix') {
+        // só agora o QR Code aparece, e a pessoa decide quando seguir
+        document.getElementById('qr').innerHTML = gerarQrFalso();
+        document.getElementById('pixCodigo').textContent = codigoPixFalso();
+        document.getElementById('pixBox').hidden = false;
+        msg('Agendamento confirmado! Escaneie o QR Code para pagar (simulado).');
+      } else {
+        msg('Agendamento confirmado! Pagamento aprovado (simulado).');
+        setTimeout(() => location.href = '/visaoCliente/meus_agendamentos/meus_agendamentos.html', 1200);
+      }
     } catch (err) { msg(err.message, 'erro'); }
   };
 });

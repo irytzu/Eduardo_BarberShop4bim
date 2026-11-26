@@ -349,3 +349,13 @@ th {
     color: var(--mut);
     word-break: break-all;
 }
+
+.pix-box .btn {
+    text-decoration: none;
+    margin-top: .4rem;
+}
+
+.btn:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
