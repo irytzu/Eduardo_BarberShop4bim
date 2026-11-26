@@ -321,3 +321,31 @@ th {
     background: #2a2420;
     color: var(--gold);
 }
+
+/* ---- QR Code Pix (simulado) ---- */
+.pix-box {
+    display: grid;
+    justify-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    border: 1px dashed #443c35;
+    border-radius: 8px;
+    background: #14110f;
+    text-align: center;
+}
+
+.pix-box[hidden] {
+    display: none;
+}
+
+#qr svg {
+    width: 180px;
+    height: 180px;
+    display: block;
+    border-radius: 4px;
+}
+
+.pix-box small {
+    color: var(--mut);
+    word-break: break-all;
+}

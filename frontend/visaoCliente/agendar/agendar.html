@@ -29,7 +29,13 @@
                         <option value="dinheiro">Dinheiro</option>
                     </select></label>
                 <p id="resumo"></p>
-                <button class="btn">Confirmar e pagar</button>
+                <div id="pixBox" class="pix-box" hidden>
+                    <div id="qr"></div>
+                    <p>Aponte a câmera do app do seu banco para o QR Code</p>
+                    <small id="pixCodigo"></small>
+                    <small>QR Code ilustrativo (pagamento simulado, não é um Pix real)</small>
+                </div>
+                <button class="btn">Confirmar</button>
             </form>
         </section>
     </main>
