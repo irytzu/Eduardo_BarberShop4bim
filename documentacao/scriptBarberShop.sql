@@ -87,7 +87,7 @@ INSERT INTO barbeiros (nome, especialidade, telefone) VALUES
 
 INSERT INTO usuarios (nome, email, senha_hash, papel) VALUES
 ('Administrador','admin@barbershop.com','$2b$10$WpOAWxzfvAg8LKZcoggyouXwFxOdb/9Muo4VSnlNS7MXqGE9zgU22','admin'),
-('João Pereira','joao@email.com','$2b$10$WpOAWxzfvAg8LKZcoggyouXwFxOdb/9Muo4VSnlNS7MXqGE9zgU22','cliente'),
+('Eduardo Barzotto','eduardobarzottoiritsu@gmail.com','$2b$10$WpOAWxzfvAg8LKZcoggyouXwFxOdb/9Muo4VSnlNS7MXqGE9zgU22','cliente'),
 ('Pedro Almeida','pedro@email.com','$2b$10$WpOAWxzfvAg8LKZcoggyouXwFxOdb/9Muo4VSnlNS7MXqGE9zgU22','cliente'),
 ('Marcos Ribeiro','marcos@email.com','$2b$10$WpOAWxzfvAg8LKZcoggyouXwFxOdb/9Muo4VSnlNS7MXqGE9zgU22','cliente'),
 ('Vinícius Castro','vinicius@email.com','$2b$10$WpOAWxzfvAg8LKZcoggyouXwFxOdb/9Muo4VSnlNS7MXqGE9zgU22','cliente'),
